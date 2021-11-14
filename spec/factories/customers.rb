@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryGirl.define do
   factory :customer do
     status { Faker::Number.within(range: 0..1) }
@@ -6,6 +8,5 @@ FactoryGirl.define do
     trait :for_user do
       association :information, factory: :user
     end
-
   end
 end
