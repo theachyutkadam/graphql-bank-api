@@ -16,9 +16,3 @@ end
   customer = FactoryGirl.create(:customer)
   FactoryGirl.create(:user, information: customer)
 end
-
-p '===================='
-p '===================='
-puts 'seed file upload successfully.'
-p '===================='
-p '===================='
