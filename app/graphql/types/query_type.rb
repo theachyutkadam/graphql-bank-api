@@ -9,5 +9,21 @@ module Types
     def test_field
       "Hello World! this is the QueryType"
     end
+
+    field :customers, [Types::CustomerType], null: false do
+      description "Query that selects all customers."
+    end
+    
+    field :customersCount, Integer, null: false do
+      description "Query that returns the total number of customers."
+    end
+
+    def customers
+      return Customer.all
+    end
+
+    def customersCount
+      return Customer.count
+    end
   end
 end
