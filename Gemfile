@@ -47,6 +47,7 @@ group :development do
   gem 'simplecov'
   gem 'spring'
   gem 'graphiql-rails'
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

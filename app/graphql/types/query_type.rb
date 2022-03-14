@@ -5,25 +5,25 @@ module Types
 
     # TODO: remove me
     field :test_field, String, null: false,
-      description: "An example field added by the generator"
+                               description: 'An example field added by the generator'
     def test_field
-      "Hello World! this is the QueryType"
+      'Hello World! this is the QueryType'
     end
 
     field :customers, [Types::CustomerType], null: false do
-      description "Query that selects all customers."
+      description 'Query that selects all customers.'
     end
-    
+
     field :customersCount, Integer, null: false do
-      description "Query that returns the total number of customers."
+      description 'Query that returns the total number of customers.'
     end
 
     def customers
-      return Customer.all
+      Customer.all
     end
 
     def customersCount
-      return Customer.count
+      Customer.count
     end
   end
 end

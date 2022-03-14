@@ -1,5 +1,16 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: customers
+#
+#  id              :bigint           not null, primary key
+#  birthdate       :datetime
+#  pan_card_number :string
+#  status          :integer
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
 class Customer < ApplicationRecord
   has_one :user, as: :information
   has_many :transactions
