@@ -13,12 +13,5 @@
 end
 
 1000.times do |_count|
-  customer = FactoryGirl.create(:customer)
-  FactoryGirl.create(:user, information: customer)
+  FactoryGirl.create(:user, information: FactoryGirl.create(:customer))
 end
-
-p '===================='
-p '===================='
-puts 'seed file upload successfully.'
-p '===================='
-p '===================='
