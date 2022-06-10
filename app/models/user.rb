@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+
   belongs_to :role
   belongs_to :information, polymorphic: true
   enum status: { active: 0, inactive: 1 } # update factory range when update enum value.
