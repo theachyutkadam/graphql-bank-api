@@ -50,4 +50,30 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  context '#validation' do
+    it 'is not valid if first_name is empty' do
+      user = build(:user, first_name: '')
+      user.save
+      expect(user).to_not be_valid
+    end
+
+    it 'is not valid if last_name is empty' do
+      user = build(:user, last_name: '')
+      user.save
+      expect(user).to_not be_valid
+    end
+
+    it 'is not valid if contact is empty' do
+      user = build(:user, contact: '')
+      user.save
+      expect(user).to_not be_valid
+    end
+
+    it 'is not valid if email is empty' do
+      user = build(:user, email: '')
+      user.save
+      expect(user).to_not be_valid
+    end
+  end
 end

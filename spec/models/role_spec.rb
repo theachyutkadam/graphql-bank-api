@@ -27,4 +27,12 @@ RSpec.describe Role, type: :model do
       end
     end
   end
+
+  context '#validation' do
+    it 'is not valid if name is empty' do
+      user = build(:role, name: '')
+      user.save
+      expect(user).to_not be_valid
+    end
+  end
 end
