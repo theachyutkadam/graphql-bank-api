@@ -39,8 +39,7 @@ FactoryGirl.define do
     contact { Faker::PhoneNumber.cell_phone_in_e164 }
     address "#{Faker::Address.city}, #{Faker::Address.street_address}"
     gender Faker::Gender.binary_type
-    # association :role, factory: :role
-    role_id 3
+    role
     status { 0 }
 
     for_customer # default customer association if none of specified.
