@@ -35,4 +35,10 @@ RSpec.describe Role, type: :model do
       expect(user).to_not be_valid
     end
   end
+
+  context 'ActiveRecord associations' do
+    it 'should has_many users' do
+      expect(Role.reflect_on_association(:users).macro).to eq(:has_many)
+    end
+  end
 end

@@ -76,4 +76,14 @@ RSpec.describe User, type: :model do
       expect(user).to_not be_valid
     end
   end
+
+  context 'ActiveRecord associations' do
+    it 'should belongs_to role' do
+      expect(User.reflect_on_association(:role).macro).to eq(:belongs_to)
+    end
+
+    it 'should belongs_to information' do
+      expect(User.reflect_on_association(:information).macro).to eq(:belongs_to)
+    end
+  end
 end
