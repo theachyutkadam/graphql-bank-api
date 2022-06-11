@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: roles
@@ -11,6 +12,10 @@
 #
 class Role < ApplicationRecord
   has_many :users, dependent: :destroy
+=======
+class Role < ApplicationRecord
+  has_many :users
+>>>>>>> develop
 
   validates :name, presence: true
 end

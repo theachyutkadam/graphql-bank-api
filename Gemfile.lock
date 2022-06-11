@@ -70,9 +70,12 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+<<<<<<< HEAD
     annotate (3.2.0)
       activerecord (>= 3.2, < 8.0)
       rake (>= 10.4, < 14.0)
+=======
+>>>>>>> develop
     ast (2.4.2)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
@@ -115,7 +118,11 @@ GEM
     graphiql-rails (1.8.0)
       railties
       sprockets-rails
+<<<<<<< HEAD
     graphql (1.11.6)
+=======
+    graphql (1.12.20)
+>>>>>>> develop
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     iniparse (1.5.0)
@@ -254,7 +261,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+<<<<<<< HEAD
   annotate
+=======
+>>>>>>> develop
   better_errors
   bootsnap (>= 1.4.4)
   byebug
@@ -263,7 +273,11 @@ DEPENDENCIES
   factory_girl_rails
   faker!
   graphiql-rails
+<<<<<<< HEAD
   graphql (= 1.11.6)
+=======
+  graphql
+>>>>>>> develop
   listen (~> 3.3)
   overcommit
   pg (~> 1.1)

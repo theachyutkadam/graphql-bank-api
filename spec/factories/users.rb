@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: users
@@ -29,6 +30,8 @@
 #
 #  fk_rails_...  (role_id => roles.id)
 #
+=======
+>>>>>>> develop
 FactoryGirl.define do
   factory :user do
     email { Faker::Internet.email }
@@ -39,7 +42,11 @@ FactoryGirl.define do
     contact { Faker::PhoneNumber.cell_phone_in_e164 }
     address "#{Faker::Address.city}, #{Faker::Address.street_address}"
     gender Faker::Gender.binary_type
+<<<<<<< HEAD
     role
+=======
+    association :role, factory: :role
+>>>>>>> develop
     status { 0 }
 
     for_customer # default customer association if none of specified.

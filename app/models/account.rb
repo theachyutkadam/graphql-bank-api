@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: accounts
@@ -24,4 +25,9 @@
 class Account < ApplicationRecord
   belongs_to :customer
   has_many :transactions
+=======
+class Account < ApplicationRecord
+  belongs_to :customer
+  has_many :cards
+>>>>>>> develop
 end

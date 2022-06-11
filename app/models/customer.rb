@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: customers
@@ -14,5 +15,10 @@
 class Customer < ApplicationRecord
   has_one :user, as: :information
   has_many :transactions
+=======
+class Customer < ApplicationRecord
+  has_one :account
+  has_one :user, as: :information
+>>>>>>> develop
   enum status: { active: 0, inactive: 1 } # update factory range when update enum value.
 end

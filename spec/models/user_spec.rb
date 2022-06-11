@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: users
@@ -29,14 +30,22 @@
 #
 #  fk_rails_...  (role_id => roles.id)
 #
+=======
+>>>>>>> develop
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe '#full_name' do
+<<<<<<< HEAD
     let(:role) { create(:role) }
     context 'return success' do
       it 'return valid full_name' do
         user = create(:user, first_name: 'Newton', last_name: 'Hand', role_id: role.id)
+=======
+    context 'return success' do
+      it 'return valid full_name' do
+        user = create(:user, first_name: 'Newton', last_name: 'Hand')
+>>>>>>> develop
         full_name = user.full_name
         expect(full_name).to eq('Newton Hand')
       end
@@ -44,12 +53,17 @@ RSpec.describe User, type: :model do
 
     context 'return invalid' do
       it 'return invalid full_name' do
+<<<<<<< HEAD
         user = create(:user, role: role)
+=======
+        user = create(:user)
+>>>>>>> develop
         full_name = user.full_name
         expect(full_name).to_not eq('Newton Sharma')
       end
     end
   end
+<<<<<<< HEAD
 
   context '#validation' do
     it 'is not valid if first_name is empty' do
@@ -86,4 +100,6 @@ RSpec.describe User, type: :model do
       expect(User.reflect_on_association(:information).macro).to eq(:belongs_to)
     end
   end
+=======
+>>>>>>> develop
 end

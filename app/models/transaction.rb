@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: transactions
@@ -24,6 +25,8 @@
 #  fk_rails_...  (account_id => accounts.id)
 #  fk_rails_...  (customer_id => customers.id)
 #
+=======
+>>>>>>> develop
 class Transaction < ApplicationRecord
   belongs_to :customer
   belongs_to :account

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: cards
@@ -24,6 +25,8 @@
 #
 #  fk_rails_...  (account_id => accounts.id)
 #
+=======
+>>>>>>> develop
 class Card < ApplicationRecord
   belongs_to :account
 end

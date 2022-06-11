@@ -13,6 +13,7 @@
 end
 
 1000.times do |_count|
+<<<<<<< HEAD
   customer = FactoryGirl.create(:customer)
   FactoryGirl.create(:user, information: customer)
 end
@@ -22,3 +23,7 @@ p '===================='
 puts 'seed file upload successfully.'
 p '===================='
 p '===================='
+=======
+  FactoryGirl.create(:user, information: FactoryGirl.create(:customer))
+end
+>>>>>>> develop

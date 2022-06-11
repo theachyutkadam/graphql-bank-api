@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: customers
@@ -11,6 +12,8 @@
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
+=======
+>>>>>>> develop
 FactoryGirl.define do
   factory :customer do
     status { Faker::Number.within(range: 0..1) }

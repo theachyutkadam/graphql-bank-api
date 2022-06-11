@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: users
@@ -29,6 +30,8 @@
 #
 #  fk_rails_...  (role_id => roles.id)
 #
+=======
+>>>>>>> develop
 class User < ApplicationRecord
   belongs_to :role
   belongs_to :information, polymorphic: true

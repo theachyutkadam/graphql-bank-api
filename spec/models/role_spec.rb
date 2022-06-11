@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+<<<<<<< HEAD
 # == Schema Information
 #
 # Table name: roles
@@ -9,6 +10,8 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
+=======
+>>>>>>> develop
 require 'rails_helper'
 
 RSpec.describe Role, type: :model do
@@ -27,6 +30,7 @@ RSpec.describe Role, type: :model do
       end
     end
   end
+<<<<<<< HEAD
 
   context '#validation' do
     it 'is not valid if name is empty' do
@@ -41,4 +45,6 @@ RSpec.describe Role, type: :model do
       expect(Role.reflect_on_association(:users).macro).to eq(:has_many)
     end
   end
+=======
+>>>>>>> develop
 end

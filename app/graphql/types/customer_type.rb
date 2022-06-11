@@ -1,5 +1,6 @@
 module Types
   class CustomerType < Types::BaseObject
+<<<<<<< HEAD
     # field :filter, String, null: true, default: "ASC" do
     #   description "Collect record with ASC or DESC order"
     # end
@@ -31,5 +32,13 @@ module Types
     field :user, Types::UserType, null: true do
       description 'Show the user of the current customer.'
     end
+=======
+    field :id, ID, null: false
+    field :status, Integer, null: true
+    field :birthdate, GraphQL::Types::ISO8601DateTime, null: true
+    field :pan_card_number, String, null: true
+    field :created_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+>>>>>>> develop
   end
 end
