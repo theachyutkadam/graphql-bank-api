@@ -48,7 +48,15 @@ group :development do
   gem 'simplecov'
   gem 'spring'
   gem 'graphiql-rails'
+<<<<<<< HEAD
+  gem 'annotate'
+=======
+>>>>>>> develop
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+<<<<<<< HEAD
+gem 'graphql', '1.11.6'
+=======
+>>>>>>> develop

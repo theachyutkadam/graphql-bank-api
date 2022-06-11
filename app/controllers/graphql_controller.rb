@@ -16,7 +16,12 @@ class GraphqlController < ApplicationController
     render json: result
   rescue StandardError => e
     raise e unless Rails.env.development?
+<<<<<<< HEAD
+
+    handle_error_in_development e
+=======
     handle_error_in_development(e)
+>>>>>>> develop
   end
 
   private

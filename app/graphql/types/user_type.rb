@@ -15,6 +15,8 @@ module Types
     field :information_id, Integer, null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+<<<<<<< HEAD
+=======
     field :email, String, null: true
     field :user_name, String, null: true
     field :password, String, null: true
@@ -24,5 +26,6 @@ module Types
     field :address, String, null: true
     field :gender, String, null: true
     field :status, String, null: true
+>>>>>>> develop
   end
 end
